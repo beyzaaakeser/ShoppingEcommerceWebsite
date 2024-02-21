@@ -12,6 +12,8 @@
   --main-color: #2c2c2c;
   --secondary-color: crimson;
   --gray-color: rgb(90, 89, 89);
+  --star-color:gold;
+  --price-color:green;
 }
 ul {
   list-style: none;
@@ -109,7 +111,80 @@ header {
 }
 
 .main-btn:hover {
-    background-color: var(--main-color);
-    color: var(--white-color);
-    transition: .5s;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  transition: 0.5s;
+}
+
+.center-text h2 {
+  text-align: center;
+  margin: 15px;
+}
+
+.center-text span {
+  color: var(--secondary-color);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 2rem;
+}
+
+.row {
+  position: relative;
+}
+
+.row img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.row img:hover {
+  scale: 0.95;
+  transition: 0.5s;
+}
+
+.product-text h5 {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 3px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  cursor: pointer;
+}
+.row:hover .product-text h5 {
+  transform: translate(50%, 100%);
+  transition: 0.5s;
+}
+
+.heart-icon {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.heart-icon:hover {
+  color: var(--secondary-color);
+
+}
+
+.rating i{
+    color: var(--star-color);
+    font-size: 20px;
+}
+
+
+.price h4{
+    color:var(--main-color);
+    font-size: 20px;
+}
+.price p{
+    color:var(--price-color);
+    font-size: 20px;
+    font-weight: bold;
 }
