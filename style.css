@@ -12,8 +12,10 @@
   --main-color: #2c2c2c;
   --secondary-color: crimson;
   --gray-color: rgb(90, 89, 89);
-  --star-color:gold;
-  --price-color:green;
+  --star-color: gold;
+  --price-color: green;
+  --review-bg-color: #eae9e9;
+  --review-p-color: #707070;
 }
 ul {
   list-style: none;
@@ -170,21 +172,53 @@ header {
 
 .heart-icon:hover {
   color: var(--secondary-color);
-
 }
 
-.rating i{
-    color: var(--star-color);
-    font-size: 20px;
+.rating i {
+  color: var(--star-color);
+  font-size: 20px;
 }
 
-
-.price h4{
-    color:var(--main-color);
-    font-size: 20px;
+.price h4 {
+  color: var(--main-color);
+  font-size: 20px;
 }
-.price p{
-    color:var(--price-color);
-    font-size: 20px;
-    font-weight: bold;
+.price p {
+  color: var(--price-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.client-review {
+  background-color: var(--review-bg-color);
+  margin-top: 30px;
+}
+
+.reviews {
+  text-align: center;
+}
+
+.reviews img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.reviews p {
+  color: var(--review-p-color);
+  font-style: italic;
+}
+
+.reviews h2 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 15px;
 }
