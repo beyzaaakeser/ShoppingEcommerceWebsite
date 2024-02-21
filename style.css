@@ -24,6 +24,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--main-color);
+  cursor: pointer;
 }
 
 header {
@@ -203,6 +204,9 @@ header {
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
+  display: block;
+  margin-left: 47%;
+  margin-bottom: 10px;
 }
 
 .reviews h3 {
@@ -214,6 +218,9 @@ header {
 .reviews p {
   color: var(--review-p-color);
   font-style: italic;
+  width: 70vw;
+  justify-content: center;
+  display: inline-block;
 }
 
 .reviews h2 {
@@ -278,7 +285,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 60px;
 }
 
 .location-text i {
@@ -287,4 +294,96 @@ p {
 
 .location-text p {
   font-style: italic;
+}
+
+.contact {
+  background-color: var(--review-bg-color);
+  padding: 15px 0;
+  padding-left: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.first-info,
+.second-info,
+.third-info,
+.fourth-info {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1 0 300px;
+}
+
+.first-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.first-info img {
+  margin: auto;
+  width: 200px;
+}
+
+.first-info a {
+  width: 100%;
+}
+
+.contact h4 {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact p {
+  cursor: pointer;
+}
+
+.contact p:hover,
+.first-info a:hover,
+.second-info a:hover,
+.third-info a:hover,
+.fourth-info a:hover {
+  color: var(--secondary-color);
+  transition: 0.5s;
+}
+
+/* 
+.social-icon a i {
+  color: var(--white-color);
+  background-color: var(--main-color);
+  /*     width: 100vw; 
+  padding: 10px;
+  margin-top: 15px;
+  color: var(--white-color);
+  display: inline-block;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 50%;
+} */
+
+.social-icon {
+  background-color: #2c2c2c;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon i {
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+.social-icon i:hover {
+  color: var(--secondary-color);
+  transition: 0.5s;
 }
