@@ -387,3 +387,59 @@ p {
   color: var(--secondary-color);
   transition: 0.5s;
 }
+
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main-text {
+    font-size: 30px;
+    transition: 0.5s;
+  }
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .first-info,
+  .second-info,
+  .third-info,
+  .fourth-info {
+    justify-content: start;
+    flex: 1 0 100px;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .location-text {
+    margin-top: 30px;
+  }
+  .location .map {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 130px;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 0.5s;
+    opacity: 0.8;
+  }
+}
